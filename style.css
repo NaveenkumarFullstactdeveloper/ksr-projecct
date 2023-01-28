@@ -1,0 +1,114 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+body{
+  font-family: 'Roboto Slab', serif;
+}
+.navbar .ksr__logo{
+  width: 5rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5rem 1fr;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 1.25rem;
+  justify-self:end;
+  word-wrap: break-word;
+  cursor: pointer;
+  color: blue;
+  font-weight: 800; 
+}
+.title{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.ksr__page__logo{
+ width: 6rem;
+ border-radius: 50%; 
+ position: fixed;
+ top: 50vh;
+ right: 50vw;
+ opacity: 0.16;
+ z-index: -10;
+}
+
+main{
+  padding: 0 1rem;
+}
+
+ol li{
+ margin-bottom: .5rem; 
+}
+
+ol{
+  line-height: 1.75rem;
+  word-break: break;
+  font-size: 1.2rem;
+}
+
+.main__content h4{
+  margin: 1rem 0; 
+}
